@@ -1,0 +1,45 @@
+<!-- <p>
+  singleproductdetails works!
+  {{this.id}}
+  {{getProductDetails.name}}
+</p> -->
+
+<div class="col-12 col-sm-6 col-md-12 col-xl-6" >
+                        <div class="single-product-wrapper">
+                            <!-- Product Image -->
+                            <div class="product-img">
+                                <img src="../assets/img/product-img/product2.jpg" alt="">
+                                <!-- Hover Thumb -->
+                                <img class="hover-img" src="../assets/img/product-img/product3.jpg" alt="">
+                            </div>
+
+                            <!-- Product Description -->
+                            <div class="product-description d-flex align-items-center justify-content-between">
+                                <!-- Product Meta Data -->
+                                <div class="product-meta-data">
+                                    <div class="line"></div>                                   
+                                    <p class="product-price">${{getProductDetails.price}}</p>                                   
+                                     <a routerLink="/Singleproductdetails/{{getProductDetails.id}}" >
+                                      <h6>ID:{{getProductDetails.id}}</h6>
+                                        <h6>{{getProductDetails.name}}</h6>                                                                          
+                                    </a>                                       
+                                        <h6>Name:{{getProductDetails.color}}</h6>
+                                        <h6>Brand:{{getProductDetails.brand}}</h6>
+                                        <h6>Category:{{getProductDetails.category}}</h6> 
+                                </div>
+                                <!-- Ratings & Cart -->
+                                <div class="ratings-cart text-right">
+                                    <div class="ratings">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="cart">
+                                        <a href="cart.html" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="../assets/img/core-img/cart.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>

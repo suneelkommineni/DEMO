@@ -1,0 +1,92 @@
+<div class="shop_sidebar_area">
+   
+    <!-- ##### Single Widget ##### -->
+    <div class="widget catagory mb-50">
+        <!-- Widget Title -->
+        <h6 class="widget-title mb-30">Catagories</h6>
+        <!--  Catagories  -->
+        <div class="catagories-menu">
+            <ul>
+                <!-- <li class="active" (click)="serchitems(this.value)" value="chairs" ><a routerLink="/Singleproductdetails/{{item.id}}" >Chairs</a></li>
+                <li><a href="#">Mobiles</a></li>
+                <li><a href="#">Accesories</a></li>
+                <li><a href="#">Furniture</a></li>
+                <li><a href="#">Home Deco</a></li>
+                <li><a href="#">Dressings</a></li>
+                <li><a href="#">Tables</a></li> -->
+ <li  *ngFor="let category of brands" ><a routerLink="/searchproducts/{{category.id}}" >{{category.brandname}}</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ##### Single Widget ##### -->
+    <div class="widget brands mb-50">
+        <!-- Widget Title -->
+        <h6 class="widget-title mb-30">Brands</h6>
+
+        <div class="widget-desc">
+            <!-- Single Form Check -->
+            <div class="form-check">
+                <input class="form-check-input" type="radio" value="apple" name="brand" id="apple"    (change)="serchitemscheckbox($event)">
+                <label class="form-check-label" for="apple">Apple</label>
+            </div>
+            <!-- Single Form Check -->
+            <div class="form-check">
+                <input class="form-check-input" type="radio" value="samsung" name="brand" id="samsung" (change)="serchitemscheckbox($event)">
+                <label class="form-check-label" for="samsung">Samsung</label>
+            </div>
+            <!-- Single Form Check -->
+            <div class="form-check">
+                <input class="form-check-input" type="radio" value="ikea" name="brand" id="ikea" (change)="serchitemscheckbox($event)">
+                <label class="form-check-label" for="ikea">Ikea</label>
+            </div>
+            <!-- Single Form Check -->
+            <div class="form-check">
+                <input class="form-check-input" type="radio" value="furniture" name="brand" id="furniture" (change)="serchitemscheckbox($event)">
+                <label class="form-check-label" for="furniture">Furniture Inc</label>
+            </div>
+            <!-- Single Form Check -->
+            <div class="form-check">
+                <input class="form-check-input" type="radio" value="factory" name="brand" id="factory" (change)="serchitemscheckbox($event)">
+                <label class="form-check-label" for="factory">The factory</label>
+            </div>
+            <!-- Single Form Check -->
+            <div class="form-check">
+                <input class="form-check-input" type="radio" value="artdeco"  name="brand" id="artdeco" (change)="serchitemscheckbox($event)" >
+                <label class="form-check-label" for="artdeco">Artdeco</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- ##### Single Widget ##### -->
+    <div class="widget color mb-50">
+        <!-- Widget Title -->
+        <h6 class="widget-title mb-30">Color</h6>
+
+        <div class="widget-desc">
+            <ul class="d-flex">
+                <li><a routerLink="/searchproducts/white" class="color1"></a></li>            
+                <li><a routerLink="/searchproducts/black" class="color3"></a></li>
+                <li><a routerLink="/searchproducts/blue" class="color4"></a></li>
+                <li><a routerLink="/searchproducts/red" class="color5"></a></li>
+                <li><a routerLink="/searchproducts/yellow" class="color6"></a></li>
+                <li><a routerLink="/searchproducts/orange" class="color7"></a></li>            
+            </ul>
+        </div>
+    </div>
+
+    <!-- ##### Single Widget ##### -->
+    <div class="widget price mb-50">
+        <!-- Widget Title -->
+        <h6 class="widget-title mb-30">Price</h6>
+              <select class="priceDropdown" name="productss" (change)="serchdropdown($event)">
+                <option value="">--</option>
+                <option value="1000">1000</option>
+                <option value="5000">5000</option>
+                <option value="20000">20000</option>
+                <option value="90000">90000</option>     
+
+              </select>
+    </div>
+
+</div>
